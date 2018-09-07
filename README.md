@@ -316,3 +316,65 @@ https://openapi.bition.pro/exchange-open-api
 |code|0||
 |msg|"suc"|code>0失败|
 |data|""||
+
+### 4) /open/api/common/symbols 查询系统支持的所有交易对及精度(get)
+|参数|填写类型|说明|
+|:---|:---|:---|
+|无|
+
+返回
+
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
+```
+{
+	"code": "0",
+	"msg": "suc",
+	"data": [{
+			"symbol": "ethbtc", //交易对
+			"count_coin": "btc", //计价货币
+			"amount_precision": 3, //数量精度位数（0为个位）
+			"base_coin": "eth", //基础币种
+			"price_precision": 8 //价格精度位数（0为个位）
+		},
+		{
+			"symbol": "ltcbtc",
+			"count_coin": "btc",
+			"amount_precision": 2,
+			"base_coin": "ltc",
+			"price_precision": 8
+		},
+		{
+			"symbol": "bchbtc",
+			"count_coin": "btc",
+			"amount_precision": 3,
+			"base_coin": "bch",
+			"price_precision": 8
+		},
+		{
+			"symbol": "etcbtc",
+			"count_coin": "btc",
+			"amount_precision": 2,
+			"base_coin": "etc",
+			"price_precision": 8
+		},
+		{
+			"symbol": "ltceth",
+			"count_coin": "eth",
+			"amount_precision": 2,
+			"base_coin": "ltc",
+			"price_precision": 8
+		},
+		{
+			"symbol": "etceth",
+			"count_coin": "eth",
+			"amount_precision": 2,
+			"base_coin": "etc",
+			"price_precision": 8
+		}
+	]
+}
+```
