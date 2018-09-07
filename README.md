@@ -300,3 +300,19 @@ https://openapi.bition.pro/exchange-open-api
 	]
 }
 ```
+### 3) /open/api/cancel_order 取消委托单 (post)
+|参数|填写类型|说明|
+|:---|:---|:---|
+|order_id|必填|订单ID|
+|symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
+|api_key|必填|api_key|
+|time|必填|时间戳|
+|sign|必填|签名|
+
+返回
+
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|""||
