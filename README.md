@@ -91,6 +91,11 @@ https://openapi.bition.pro/exchange-open-api
 |time|必填|时间戳|
 |sign|必填|签名|
 返回
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
 ```
 {
 	"count": 10,
@@ -156,6 +161,137 @@ https://openapi.bition.pro/exchange-open-api
 				}
 			],
 			"status": 2
+		}
+	]
+}
+```
+### 2) /open/api/all_trade 获取全部成交记录 (get)
+|参数|填写类型|说明|
+|:---|:---|:---|
+|symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
+|pageSize|选填|页面大小|
+|page|选填|页码|
+|api_key|必填|api_key|
+|time|必填|时间戳|
+|sign|必填|签名|
+返回
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
+```
+{
+	"count": 22,
+	"resultList": [{
+			"volume": "1.000",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.16431104",
+			"ctime": 1510996571195,
+			"deal_price": "0.10000000",
+			"id": 306,
+			"type": "买入"
+		},
+		{
+			"volume": "0.850",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.13966438",
+			"ctime": 1510996571190,
+			"deal_price": "0.08500000",
+			"id": 305,
+			"type": "买入"
+		},
+		{
+			"volume": "0.010",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.00164311",
+			"ctime": 1510995560344,
+			"deal_price": "0.00100000",
+			"id": 291,
+			"type": "买入"
+		},
+		{
+			"volume": "0.010",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.00164311",
+			"ctime": 1510995560338,
+			"deal_price": "0.00100000",
+			"id": 290,
+			"type": "买入"
+		},
+		{
+			"volume": "0.010",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.00164311",
+			"ctime": 1510995560331,
+			"deal_price": "0.00100000",
+			"id": 289,
+			"type": "买入"
+		},
+		{
+			"volume": "0.010",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.00164311",
+			"ctime": 1510995555323,
+			"deal_price": "0.00100000",
+			"id": 288,
+			"type": "买入"
+		},
+		{
+			"volume": "0.010",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.00164311",
+			"ctime": 1510995555317,
+			"deal_price": "0.00100000",
+			"id": 287,
+			"type": "买入"
+		},
+		{
+			"volume": "0.010",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.00164311",
+			"ctime": 1510995550309,
+			"deal_price": "0.00100000",
+			"id": 286,
+			"type": "买入"
+		},
+		{
+			"volume": "0.010",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.00164311",
+			"ctime": 1510995550303,
+			"deal_price": "0.00100000",
+			"id": 285,
+			"type": "买入"
+		},
+		{
+			"volume": "0.010",
+			"side": "BUY",
+			"feeCoin": "YLB",
+			"price": "0.10000000",
+			"fee": "0.00164311",
+			"ctime": 1510995545295,
+			"deal_price": "0.00100000",
+			"id": 284,
+			"type": "买入"
 		}
 	]
 }
