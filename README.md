@@ -90,7 +90,9 @@ https://openapi.bition.pro/exchange-open-api
 |api_key|必填|api_key|
 |time|必填|时间戳|
 |sign|必填|签名|
+
 返回
+
 |字段|实例|说明|
 |:---|:---|:---|
 |code|0||
@@ -174,7 +176,9 @@ https://openapi.bition.pro/exchange-open-api
 |api_key|必填|api_key|
 |time|必填|时间戳|
 |sign|必填|签名|
+
 返回
+
 |字段|实例|说明|
 |:---|:---|:---|
 |code|0||
