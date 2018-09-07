@@ -1,5 +1,5 @@
 # Bition-exchange-api
-##1.目录
+## 1.目录
 /open/api/all_order —— 获取全部委托
 
 /open/api/all_trade —— 获取全部成交记录
@@ -25,7 +25,7 @@
 /open/api/order_info —— 获取订单详情
 
 /open/api/user/account —— 资产余额
-##2.通用规则
+## 2.通用规则
 签名：
 
 请求参数按照字典排序，然后以keyvalue的形式拼接成字符串string，最后sign=MD5(string+secretKey)。注意：如果请求参数中value为NULL的情况，则在拼接字符串时不计入签名字符串。
