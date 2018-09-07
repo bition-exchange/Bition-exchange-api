@@ -100,71 +100,71 @@ https://openapi.bition.pro/exchange-open-api
 |data|如下||
 ```
 {
-	"count": 10,
-	"orderList": [
-		{
-			"side": "BUY",
-			"total_price": "0.10000000",
-			"created_at": 1510993841000,
-			"avg_price": "0.10000000",
-			"countCoin": "btc",
-			"source": 1,
-			"type": 1,
-			"side_msg": "买入",
-			"volume": "1.000",
-			"price": "0.10000000",
-			"source_msg": "WEB",
-			"status_msg": "完全成交",
-			"deal_volume": "1.00000000",
-			"id": 424,
-			"remain_volume": "0.00000000",
-			"baseCoin": "eth",
-			"tradeList": [
-				{
-					"volume": "1.000",
-					"feeCoin": "YLB",
-					"price": "0.10000000",
-					"fee": "0.16431104",
-					"ctime": 1510996571195,
-					"deal_price": "0.10000000",
-					"id": 306,
-					"type": "买入"
-				}
-			],
-			"status": 2
-		},
-		{
-			"side": "SELL",
-			"total_price": "0.09900000",
-			"created_at": 1510993715000,
-			"avg_price": "0.10000000",
-			"countCoin": "btc",
-			"source": 1,
-			"type": 1,
-			"side_msg": "卖出",
-			"volume": "1.000",
-			"price": "0.09900000",
-			"source_msg": "WEB",
-			"status_msg": "完全成交",
-			"deal_volume": "1.00000000",
-			"id": 423,
-			"remain_volume": "0.00000000",
-			"baseCoin": "eth",
-			"tradeList": [
-				{
-					"volume": "1.000",
-					"feeCoin": "YLB",
-					"price": "0.10000000",
-					"fee": "0.16597075",
-					"ctime": 1510993723973,
-					"deal_price": "0.10000000",
-					"id": 261,
-					"type": "卖出"
-				}
-			],
-			"status": 2
-		}
-	]
+    "count":10,
+    "orderList":[
+        {
+            "side":"BUY",
+            "total_price":"0.10000000",
+            "created_at":1510993841000,
+            "avg_price":"0.10000000",
+            "countCoin":"btc",
+            "source":1,
+            "type":1,
+            "side_msg":"买入",
+            "volume":"1.000",
+            "price":"0.10000000",
+            "source_msg":"WEB",
+            "status_msg":"完全成交",
+            "deal_volume":"1.00000000",
+            "id":424,
+            "remain_volume":"0.00000000",
+            "baseCoin":"eth",
+            "tradeList":[
+                {
+                    "volume":"1.000",
+                    "feeCoin":"YLB",
+                    "price":"0.10000000",
+                    "fee":"0.16431104",
+                    "ctime":1510996571195,
+                    "deal_price":"0.10000000",
+                    "id":306,
+                    "type":"买入"
+                }
+            ],
+            "status":2
+        },
+        {
+            "side":"SELL",
+            "total_price":"0.09900000",
+            "created_at":1510993715000,
+            "avg_price":"0.10000000",
+            "countCoin":"btc",
+            "source":1,
+            "type":1,
+            "side_msg":"卖出",
+            "volume":"1.000",
+            "price":"0.09900000",
+            "source_msg":"WEB",
+            "status_msg":"完全成交",
+            "deal_volume":"1.00000000",
+            "id":423,
+            "remain_volume":"0.00000000",
+            "baseCoin":"eth",
+            "tradeList":[
+                {
+                    "volume":"1.000",
+                    "feeCoin":"YLB",
+                    "price":"0.10000000",
+                    "fee":"0.16597075",
+                    "ctime":1510993723973,
+                    "deal_price":"0.10000000",
+                    "id":261,
+                    "type":"卖出"
+                }
+            ],
+            "status":2
+        }
+    ]
 }
 ```
 ### 2) /open/api/all_trade 获取全部成交记录 (get)
@@ -186,118 +186,119 @@ https://openapi.bition.pro/exchange-open-api
 |data|如下||
 ```
 {
-	"count": 22,
-	"resultList": [{
-			"volume": "1.000",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.16431104",
-			"ctime": 1510996571195,
-			"deal_price": "0.10000000",
-			"id": 306,
-			"type": "买入"
-		},
-		{
-			"volume": "0.850",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.13966438",
-			"ctime": 1510996571190,
-			"deal_price": "0.08500000",
-			"id": 305,
-			"type": "买入"
-		},
-		{
-			"volume": "0.010",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.00164311",
-			"ctime": 1510995560344,
-			"deal_price": "0.00100000",
-			"id": 291,
-			"type": "买入"
-		},
-		{
-			"volume": "0.010",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.00164311",
-			"ctime": 1510995560338,
-			"deal_price": "0.00100000",
-			"id": 290,
-			"type": "买入"
-		},
-		{
-			"volume": "0.010",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.00164311",
-			"ctime": 1510995560331,
-			"deal_price": "0.00100000",
-			"id": 289,
-			"type": "买入"
-		},
-		{
-			"volume": "0.010",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.00164311",
-			"ctime": 1510995555323,
-			"deal_price": "0.00100000",
-			"id": 288,
-			"type": "买入"
-		},
-		{
-			"volume": "0.010",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.00164311",
-			"ctime": 1510995555317,
-			"deal_price": "0.00100000",
-			"id": 287,
-			"type": "买入"
-		},
-		{
-			"volume": "0.010",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.00164311",
-			"ctime": 1510995550309,
-			"deal_price": "0.00100000",
-			"id": 286,
-			"type": "买入"
-		},
-		{
-			"volume": "0.010",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.00164311",
-			"ctime": 1510995550303,
-			"deal_price": "0.00100000",
-			"id": 285,
-			"type": "买入"
-		},
-		{
-			"volume": "0.010",
-			"side": "BUY",
-			"feeCoin": "YLB",
-			"price": "0.10000000",
-			"fee": "0.00164311",
-			"ctime": 1510995545295,
-			"deal_price": "0.00100000",
-			"id": 284,
-			"type": "买入"
-		}
-	]
+    "count":22,
+    "resultList":[
+            {
+                    "volume":"1.000",
+                    "side":"BUY",
+                    "feeCoin":"YLB",
+                    "price":"0.10000000",
+                    "fee":"0.16431104",
+                    "ctime":1510996571195,
+                    "deal_price":"0.10000000",
+                    "id":306,
+                    "type":"买入"
+            },
+            {
+                "volume":"0.850",
+                "side":"BUY",
+                "feeCoin":"YLB",
+                "price":"0.10000000",
+                "fee":"0.13966438",
+                "ctime":1510996571190,
+                "deal_price":"0.08500000",
+                "id":305,
+                "type":"买入"
+            },
+            {
+                "volume":"0.010",
+                "side":"BUY",
+                "feeCoin":"YLB",
+                "price":"0.10000000",
+                "fee":"0.00164311",
+                "ctime":1510995560344,
+                "deal_price":"0.00100000",
+                "id":291,
+                "type":"买入"
+            },
+            {
+                "volume":"0.010",
+                "side":"BUY",
+                "feeCoin":"YLB",
+                "price":"0.10000000",
+                "fee":"0.00164311",
+                "ctime":1510995560338,
+                "deal_price":"0.00100000",
+                "id":290,
+                "type":"买入"
+            },
+            {
+                "volume":"0.010",
+                "side":"BUY",
+                "feeCoin":"YLB",
+                "price":"0.10000000",
+                "fee":"0.00164311",
+                "ctime":1510995560331,
+                "deal_price":"0.00100000",
+                "id":289,
+                "type":"买入"
+            },
+            {
+                "volume":"0.010",
+                "side":"BUY",
+                "feeCoin":"YLB",
+                "price":"0.10000000",
+                "fee":"0.00164311",
+                "ctime":1510995555323,
+                "deal_price":"0.00100000",
+                "id":288,
+                "type":"买入"
+            },
+            {
+                "volume":"0.010",
+                "side":"BUY",
+                "feeCoin":"YLB",
+                "price":"0.10000000",
+                "fee":"0.00164311",
+                "ctime":1510995555317,
+                "deal_price":"0.00100000",
+                "id":287,
+                "type":"买入"
+            },
+            {
+                "volume":"0.010",
+                "side":"BUY",
+                "feeCoin":"YLB",
+                "price":"0.10000000",
+                "fee":"0.00164311",
+                "ctime":1510995550309,
+                "deal_price":"0.00100000",
+                "id":286,
+                "type":"买入"
+            },
+            {
+                "volume":"0.010",
+                "side":"BUY",
+                "feeCoin":"YLB",
+                "price":"0.10000000",
+                "fee":"0.00164311",
+                "ctime":1510995550303,
+                "deal_price":"0.00100000",
+                "id":285,
+                "type":"买入"
+            },
+            {
+                "volume":"0.010",
+                "side":"BUY",
+                "feeCoin":"YLB",
+                "price":"0.10000000",
+                "fee":"0.00164311",
+                "ctime":1510995545295,
+                "deal_price":"0.00100000",
+                "id":284,
+                "type":"买入"
+            }
+        ]
 }
 ```
 ### 3) /open/api/cancel_order 取消委托单 (post)
@@ -331,51 +332,52 @@ https://openapi.bition.pro/exchange-open-api
 |data|如下||
 ```
 {
-	"code": "0",
-	"msg": "suc",
-	"data": [{
-			"symbol": "ethbtc", //交易对
-			"count_coin": "btc", //计价货币
-			"amount_precision": 3, //数量精度位数（0为个位）
-			"base_coin": "eth", //基础币种
-			"price_precision": 8 //价格精度位数（0为个位）
-		},
-		{
-			"symbol": "ltcbtc",
-			"count_coin": "btc",
-			"amount_precision": 2,
-			"base_coin": "ltc",
-			"price_precision": 8
-		},
-		{
-			"symbol": "bchbtc",
-			"count_coin": "btc",
-			"amount_precision": 3,
-			"base_coin": "bch",
-			"price_precision": 8
-		},
-		{
-			"symbol": "etcbtc",
-			"count_coin": "btc",
-			"amount_precision": 2,
-			"base_coin": "etc",
-			"price_precision": 8
-		},
-		{
-			"symbol": "ltceth",
-			"count_coin": "eth",
-			"amount_precision": 2,
-			"base_coin": "ltc",
-			"price_precision": 8
-		},
-		{
-			"symbol": "etceth",
-			"count_coin": "eth",
-			"amount_precision": 2,
-			"base_coin": "etc",
-			"price_precision": 8
-		}
-	]
+    "code": "0",
+    "msg": "suc",
+    "data": [
+        {
+            "symbol": "ethbtc",//交易对
+            "count_coin": "btc",//计价货币
+            "amount_precision": 3,//数量精度位数（0为个位）
+            "base_coin": "eth",//基础币种
+            "price_precision": 8 //价格精度位数（0为个位）
+        },
+        {
+            "symbol": "ltcbtc",
+            "count_coin": "btc",
+            "amount_precision": 2,
+            "base_coin": "ltc",
+            "price_precision": 8
+        },
+        {
+            "symbol": "bchbtc",
+            "count_coin": "btc",
+            "amount_precision": 3,
+            "base_coin": "bch",
+            "price_precision": 8
+        },
+        {
+            "symbol": "etcbtc",
+            "count_coin": "btc",
+            "amount_precision": 2,
+            "base_coin": "etc",
+            "price_precision": 8
+        },
+        {
+            "symbol": "ltceth",
+            "count_coin": "eth",
+            "amount_precision": 2,
+            "base_coin": "ltc",
+            "price_precision": 8
+        },
+        {
+            "symbol": "etceth",
+            "count_coin": "eth",
+            "amount_precision": 2,
+            "base_coin": "etc",
+            "price_precision": 8
+        }
+    ]
 }
 ```
 ### 5) /open/api/create_order 创建订单(post)
@@ -441,3 +443,309 @@ https://openapi.bition.pro/exchange-open-api
     ]
 ]
 ```
+### 7) /open/api/get_ticker 获取当前行情(get)
+|参数|填写类型|说明|
+|:---|:---|:---|
+|symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
+
+
+返回
+
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
+
+```
+{
+    "high": 1.12,//最高值
+    "vol": 7232.26315789,//交易量
+    "last": 173.60263169,//最新成交价
+    "low": 0.01,//最低值
+    "buy": "0.01000000",//买一价
+    "sell": "1.12345680",//卖一价
+    "time": 1514466455542
+}
+```
+### 8) /open/api/get_trades 获取行情成交记录(get)
+|参数|填写类型|说明|
+|:---|:---|:---|
+|symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
+
+
+返回
+
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
+```
+[
+    {
+        "amount": 0.55,//成交量
+        "price": 0.18519949,//成交价
+        "id": 447121,
+        "type": "buy"//买卖type，买为buy，买sell
+    },
+    {
+        "amount": 16.45,
+        "price": 0.18335468,
+        "id": 447120,
+        "type": "buy"
+    },
+    {
+        "amount": 2,
+        "price": 0.18335468,
+        "id": 447119,
+        "type": "buy"
+    },
+    {
+        "amount": 2.92,
+        "price": 0.183324003,
+        "id": 447118,
+        "type": "sell"
+    }
+]
+```
+### 9) /open/api/market_dept 查询买卖盘深度(get)
+|参数|填写类型|说明|
+|:---|:---|:---|
+|symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
+|type|必填|深度类型，step0，step1，step2|
+
+返回
+
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
+```
+{
+    "tick":{
+        "asks":[//卖盘
+            {22112.22,0.9332},
+            {22112.21,0.2},
+            {22112.21,0.2},
+            {22112.21,0.2},
+            {22112.21,0.2},
+        ],
+        "bids":[//买盘
+            {22111.22,0.9332},
+            {22111.21,0.2},
+            {22112.21,0.2},
+            {22112.21,0.2},
+            {22112.21,0.2},
+        ]
+    }
+}
+```
+
+### 10) /open/api/market 获取各个币对的最新成交价(get)
+|参数|填写类型|说明|
+|:---|:---|:---|
+|api_key|必填|api_key|
+|time|必填|时间戳|
+|sign|必填|签名|
+
+返回
+
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
+```
+{
+	'btcusdt': 6487.07,
+	'mvpeth': 6.878e-05,
+	'hteth': 0.00765646,
+	'rwcteth': 0.01,
+	'miceth': 3.5e-06,
+	'htbtc': 0.00027066,
+	'bnbbtc': 0.0015624,
+	'mvpusdt': 0.015634,
+	'wicceth': 0.0008035,
+	'ethbtc': 0.035293,
+	'bnbeth': 0.044306,
+	'micbtc': 3.6e-07,
+	'ethusdt': 228.9
+}
+```
+### 11) /open/api/new_order 获取当前委托，包括未成交和正在成交的委托(get)
+
+|参数|填写类型|说明|
+|:---|:---|:---|
+|symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
+|pageSize|选填|页面大小|
+|page|选填|页码|
+|api_key|必填|api_key|
+|time|必填|时间戳|
+|sign|必填|签名|
+
+返回
+
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
+```
+{
+	"count": 10,
+	"resultList": [{
+			"side": "BUY",
+			"total_price": "0.10000000",
+			"created_at": 1510993841000,
+			"avg_price": "0.10000000",
+			"countCoin": "btc",
+			"source": 1,
+			"type": 1,
+			"side_msg": "买入",
+			"volume": "1.000",
+			"price": "0.10000000",
+			"source_msg": "WEB",
+			"status_msg": "完全成交",
+			"deal_volume": "1.00000000",
+			"id": 424,
+			"remain_volume": "0.00000000",
+			"baseCoin": "eth",
+			"tradeList": [{
+				"volume": "1.000",
+				"feeCoin": "YLB",
+				"price": "0.10000000",
+				"fee": "0.16431104",
+				"ctime": 1510996571195,
+				"deal_price": "0.10000000",
+				"id": 306,
+				"type": "买入"
+			}],
+			"status": 2
+		},
+		{
+			"side": "SELL",
+			"total_price": "0.09900000",
+			"created_at": 1510993715000,
+			"avg_price": "0.10000000",
+			"countCoin": "btc",
+			"source": 1,
+			"type": 1,
+			"side_msg": "卖出",
+			"volume": "1.000",
+			"price": "0.09900000",
+			"source_msg": "WEB",
+			"status_msg": "完全成交",
+			"deal_volume": "1.00000000",
+			"id": 423,
+			"remain_volume": "0.00000000",
+			"baseCoin": "eth",
+			"tradeList": [{
+				"volume": "1.000",
+				"feeCoin": "YLB",
+				"price": "0.10000000",
+				"fee": "0.16597075",
+				"ctime": 1510993723973,
+				"deal_price": "0.10000000",
+				"id": 261,
+				"type": "卖出"
+			}],
+			"status": 2
+		}
+	]
+}
+```
+### 12) /open/api/order_info 获取订单详情(get)
+|参数|填写类型|说明|
+|:---|:---|:---|
+|order_id|必填|订单ID|
+|symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
+|api_key|必填|api_key|
+|time|必填|时间戳|
+|sign|必填|签名|
+
+返回
+
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
+```
+{
+    "order_info":{
+        "id":343,
+        "side":"sell",
+        "side_msg":"卖出",
+        "created_at":"09-2212:22",
+        "price":222.33,
+        "volume":222.33,
+        "deal_volume":222.33,
+        "total_price":222.33,
+        "fee":222.33,
+        "age_price":222.33
+    }，
+    "trade_list":[
+        {
+            "id":343,
+            "created_at":"09-22 12:22",
+            "price":222.33,
+            "volume":222.33,
+            "deal_price":222.33,
+            "deal_fee":222.33
+        },
+        {
+            "id":345,
+            "created_at":"09-22 12:22",
+            "price":222.33,
+            "volume":222.33,
+            "deal_price":222.33,
+            "deal_fee":222.33
+        }
+    ]
+}
+```
+
+### 13) /open/api/user/account 资产余额(get)
+|参数|填写类型|说明|
+|:---|:---|:---|
+|api_key|必填|api_key|
+|time|必填|时间戳|
+|sign|必填|签名|
+
+返回
+
+|字段|实例|说明|
+|:---|:---|:---|
+|code|0||
+|msg|"suc"|code>0失败|
+|data|如下||
+```
+{
+    "total_asset": 432323.23, //总资产
+    "coin_list": [
+        {
+            "coin": "btc",
+            "normal": 3.233,//余额账户
+            "locked": 0.233,//冻结账户
+            "btcValuatin": 3.233 //BTC估值
+        },
+        {
+            "coin": "eth",
+            "normal": 3.233,
+            "locked": 3.233,
+            "btcValuatin": 0.312
+        }
+    ]
+}
+```
+
+### 市场标记(symbol)
+
+|虚拟币|XXX/BTC|XXX/USDT|XXX/ETH|
+|:---|:---|:---|:---|
+|btc|-|btcusdt|-|
+|eth|ethbtc|ethusdt|-|
+|mvp|mvpbtc|mvpusdt|mvpeth|
+|ht|htbtc|htusdt|hteth|
