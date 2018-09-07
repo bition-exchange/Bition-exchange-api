@@ -34,19 +34,20 @@
 ```
 {
 
-country = 86;
+	country = 86;
 
-mobile = 15882133579;
+	mobile = 15882133579;
 
-password = 654321zz;
+	password = 654321zz;
 
-time = 1516007245;
+	time = 1516007245;
 
 }
 ```
  
 拼接完成后：
-
+```
 string = country86mobile15882133579password654321zztime1516007278
 
 sign=MD5(string+secretKey)
+```
